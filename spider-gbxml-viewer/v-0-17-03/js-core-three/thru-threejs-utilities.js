@@ -4,7 +4,7 @@
 
 "use strict";
 
-let THRU = {
+var THRU = {
 
 	copyright: "Copyright 2019 Ladybug Tools authors. MIT License",
 	date: "2019-07-24",
@@ -76,6 +76,8 @@ THRU.setSceneDispose = function( objArr = [] ) {
 	THR.scene.remove( ...objArr );
 
 	objArr.forEach( obj => obj = undefined );
+
+	//THR.scene.dispose();
 
 	// for testing
 	//divRendererInfo.innerHTML = THRU.getRendererInfo();
@@ -495,6 +497,7 @@ THRU.toggleEdges = function( obj = THR.scene ) {
 
 
 ////////// Lights
+
 
 THRU.addSomeLights = function() {
 
